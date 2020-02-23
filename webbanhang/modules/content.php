@@ -22,9 +22,33 @@
 				{
 					include ('modules/right/chitietsp.php');
 				}
+				elseif ($tam=='dangky')
+				{
+					include ('modules/right/dangky.php');
+				}
+				elseif ($tam=='thongbao')
+				{
+					include ('modules/right/thongbao.php');
+				}
+				elseif ($tam=='thanhtoan')
+				{
+					include ('modules/right/thanhtoan.php');
+				}
+				elseif (isset($_POST['search']))
+				{
+					include ('modules/right/search.php');
+				}
+				elseif ($tam=='rtlogin')
+				{
+					include ('modules/right/dangnhap.php');
+				}
+			
+				elseif ($tam=='giohang')
+				{
+					include ('modules/right/giohang.php');
+				}
 				else
 					include ('modules/right/allsanpham.php');
-			
 			 ?>
         </div>
 		

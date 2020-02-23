@@ -8,7 +8,7 @@ table{
 	margin:0;
 	}
 .wrapper{
-	width:1000px;
+	width:auto;
 	height:auto;
 	border:1px solid #000;
 	margin:auto;
@@ -52,7 +52,7 @@ table{
 	height:auto;
 	border:1px solid #000;
 	float:left;	
-	margin-left:10px;
+	margin-left:0px;
 }
 .clear{
 	clear:both;	

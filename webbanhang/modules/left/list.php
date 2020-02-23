@@ -1,20 +1,19 @@
+<?php
+	$sql_loaisp = "select * from loaisp";
+	$query=mysqli_query ($conn,$sql_loaisp);
+?>
         	<p style="text-align:center; color:#F00; background:#0CF; padding:10px;">Sản phẩm</p>
             <div class="danhsachsanpham">
             	<ul>
-                	<li><a href="#">Áo Phông</a></li><br>
-                	<li><a href="#">Áo Khoác</a></li><br>
-                	<li><a href="#">Áo Hoodie</a></li><br>
-                    <li><a href="#">Quần Jogger</a></li><br>
-                	<li><a href="#">Quần Jeans</a></li><br>
-                	<li><a href="#">Quần Đùi</a></li><br>
+                <?php
+                	while ($dong_sp=mysqli_fetch_array($query)){
+				?>
+                	<li><a href="index.php?xem=chitietloaisp&id=<?php echo $dong_sp['id_loaisp'] ?>"> <?php echo $dong_sp['tenloaisp'] ?></a></li><br>
+                	<?php
+					}
+					?>
                 </ul>
                 </div>
-                <p style="text-align:center; color:#F00; background:#0CF; padding:10px;">Loại</p>
+             
                 
-               
-            <div class="danhsachsanpham">
-            	<ul>
-                	<li><a href="#">Áo</a></li><br>
-                	<li><a href="#">Quần</a></li><br>
-                </ul>
-            </div>
+      

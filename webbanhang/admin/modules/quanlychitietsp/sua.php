@@ -5,7 +5,7 @@
 ?>
 <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
   <script>tinymce.init({selector:'textarea'});</script>
-<form action="modules/quanlychitietsp/xuly.php/id=<?php echo $dong['id_sp'] ?>" method="post" enctype="multipart/form-data">
+<form action="modules/quanlychitietsp/xuly.php?id=<?php echo $dong['id_sp']?>" method="post" enctype="multipart/form-data">
 <table width="100%" border="1" cellspacing="0" cellpadding="0">
   <tr>
     <td colspan="2"><div align="center">Sửa chi tiết sản phẩm</div></td>
@@ -16,7 +16,7 @@
   </tr>
   <tr>
     <td>Giá sp</td>
-    <td><input type="text" name="gia" value="<?php echo $dong['tensp']?>"></td>
+    <td><input type="text" name="gia" value="<?php echo $dong['gia']?>"></td>
   </tr>
   <tr>
     <td>Hình ảnh</td>
@@ -50,7 +50,7 @@
   </tr>
   <tr>
     <td height="27">Thứ tự</td>
-    <td><input type="text" name="thutu" value="<?php echo $dong['thutu']?>"></td>
+    <td><input type="text" name="thutusp" value="<?php echo $dong['thutusp']?>"></td>
   </tr>
   <tr>
     <td colspan="2"><div align="center">

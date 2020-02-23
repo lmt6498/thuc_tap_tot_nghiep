@@ -1,5 +1,5 @@
 <?php
-	$sql="select * from loaisp where id_loaisp=$_GET[id]";
+	$sql="select * from loaisp where id_loaisp='$_GET[id]'";
 	$run=mysqli_query($conn,$sql);
 	$dong=mysqli_fetch_array($run);
 ?>

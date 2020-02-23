@@ -2,7 +2,7 @@
 	$sql_all="select * from chitietsp";
 	$query=mysqli_query($conn,$sql_all);
 ?>
-        	<p style="text-align:center; color:#F00; background:#0CF; padding:10px;">Trang chủ</p>
+        	<p style="text-align:center; color:#F00; background:#0CF; padding:10px;">Sản phẩm</p>
         	<div class="sanphamall">
             	<ul>
                 <?php  

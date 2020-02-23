@@ -8,6 +8,7 @@
 <body>
 <div class="wrapper">
 	<?php
+		include ('admin/modules/connect.php');
     	include ('modules/header.php');
 		include ('modules/menu.php');
 		include ('modules/content.php');
