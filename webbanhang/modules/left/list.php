@@ -2,7 +2,9 @@
 	$sql_loaisp = "select * from loaisp";
 	$query=mysqli_query ($conn,$sql_loaisp);
 ?>
-        	<p style="text-align:center; color:#F00; background:#0CF; padding:10px;">Sản phẩm</p>
+ <div class="tieude">
+            	<h3>Sản phẩm</h3>
+            </div>
             <div class="danhsachsanpham">
             	<ul>
                 <?php

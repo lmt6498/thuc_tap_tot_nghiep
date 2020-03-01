@@ -1,14 +1,19 @@
-<?php session_start();
-//session_destroy();
- ?>
- <div class="tieude">
-<h1>Giỏ hàng</h1> 
+<?php 
+ session_start();
+?>
+<div class="tieude">
+<h1> Trang thanh toán:</h1>
 </div>
 <h3 style="float:right">
+<form method="post" enctype="multipart/form-data" action="">
 <?php 
 	if(isset($_SESSION['dangnhap']))
 	{
 		echo 'Xin chào:'.$_SESSION['dangnhap'];
+	}
+	if (!isset ($_SESSION['dangnhap']))
+	{
+		header ('location:index.php?xem=thongbaott');
 	}
 ?>
 </h3>
@@ -58,7 +63,7 @@
 			
 			echo'  <tr bgcolor="#00FF33";>';
 			echo'<td width="100px">Tên SP</td>';
-			echo'<td width="100px">Hình ảnh</td>';
+			echo'<td width="100px">Hình ảnh SP</td>';
 			echo'<td width="100px">Giá sp</td>';
 			echo'<td width="30px">SL</td>';
 			echo'<td width="100px">Tổng tiền</td>';
@@ -80,14 +85,17 @@
 			}
 			}
 	}
-	if ($thanhtien==0)
-	{
-		echo "Giỏ hàng trống!!";
-		echo '<p><a href="index.php">Click vào đây để quay lại trang mua hàng!!</a></p>';
-	}else
-	{
-		echo '<a href="index.php?xem=thanhtoan"><img style="float:right" src="images/dat-hang-ngay-button.gif" width="100" height="50"></a>';
+	
 		echo '<h3 style="color:red"> Tổng tiền thanh toán='.$thanhtien.'.000'.'vnđ'.'</h3>';
-		echo '<p><a href="index.php">Tiếp tục mua hàng</a></p>';
-	}
 ?>
+	<input type="submit" name="thanhtoan" value="Xác nhận đặt hàng" style="margin-left:50%;width:200px;height:40px;background:#F00;color:#FFF;font-size:18px;border-radius:8px;" />
+    <?php
+    	if (isset ($_POST['thanhtoan']))
+		{
+			
+			session_destroy();
+			header ('location:index.php?xem=camon');
+		}
+	?>
+</form>
+

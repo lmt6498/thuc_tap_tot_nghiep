@@ -11,7 +11,7 @@
 			if($tam=='sua'){
 				include('modules/quanlychitietsp/sua.php');
 				}
-				
+			
 	?>
 </div>
 <div class="right">

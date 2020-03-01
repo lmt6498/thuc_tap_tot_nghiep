@@ -1,5 +1,5 @@
 <?php
-	if (isset($_GET['ac'])&&$_GET['logout'])
+	if (isset($_GET['ac'])&&$_GET['ac']=='logout')
 	{
 		unset ($_SESSION['dangnhap']);
 		header('location:login.php');
@@ -10,6 +10,7 @@
         	<li><a href="index.php">Trang chủ</a></li>
             <li><a href="index.php?quanly=quanlyloaisp&ac=them">Quản lý loại sản phẩm</a></li>
             <li><a href="index.php?quanly=quanlychitietsp&ac=them">Quản lý chi tiết sản phẩm</a></li>
+         	<li><a href="index.php?quanly=quanlychitietsp&ac=doimatkhau">Đổi mật khẩu</a></li>
             <li><a href="index.php?quanly=quanlychitietsp&ac=logout">Đăng xuất</a></li>
         </ul>
     </div>

@@ -30,9 +30,21 @@
 				{
 					include ('modules/right/thongbao.php');
 				}
+				elseif ($tam=='dangnhap')
+				{
+					include ('modules/right/dangnhap.php');
+				}
 				elseif ($tam=='thanhtoan')
 				{
-					include ('modules/right/thanhtoan.php');
+					include ('modules/right/thanhtoan/thanhtoan.php');
+				}
+				elseif ($tam=='thongbaott')
+				{
+					include ('modules/right/thanhtoan/thongbaott.php');
+				}
+				elseif ($tam=='camon')
+				{
+					include ('modules/right/thanhtoan/camon.php');
 				}
 				elseif (isset($_POST['search']))
 				{

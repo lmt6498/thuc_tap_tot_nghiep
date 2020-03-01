@@ -11,6 +11,16 @@
 	border:1px solid #000;
 	margin:auto;
 }
+.tieude{
+	width:auto;
+	height:40px;
+	background:#9F0;
+	font-size:20px;
+	text-align:center;
+	padding:5px;
+	color:#F00;
+	line-height:40px;
+}
 .header {
 	width:100%;
 	height:250px;
@@ -36,7 +46,7 @@
 	text-decoration:none;	
 }
 .menu a hover{
-	text-decoration:underline;
+	background:#9F0;
 }
 .content{
 	width:100%;
@@ -68,7 +78,7 @@
 	display:block;
 }
 .danhsachsanpham a:hover{
-	background:#C40C42;
+	background:#9F0;
 }
 .right{
 	width:71%;

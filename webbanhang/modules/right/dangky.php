@@ -1,3 +1,6 @@
+<div class="tieude">
+	<h1>Trang đăng ký</h1>
+</div>
 <?php
 	if (isset($_POST['dangky']))
 	{
