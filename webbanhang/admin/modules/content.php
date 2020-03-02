@@ -7,6 +7,8 @@
 				include('modules/quanlyloaisp/main.php');}
 			if($tam=='quanlychitietsp'){
 				include('modules/quanlychitietsp/main.php');}
+			if($tam=='gallery'){
+				include('modules/gallery/main.php');}
 			if($tam=='doimatkhau'){
 				include('doipass.php');}		
 		?>
