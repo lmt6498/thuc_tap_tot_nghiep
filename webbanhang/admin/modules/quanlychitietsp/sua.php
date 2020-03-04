@@ -51,6 +51,13 @@
   <tr>
     <td height="27">Thứ tự</td>
     <td><input type="text" name="thutusp" value="<?php echo $dong['thutusp']?>"></td>
+    <tr>
+  	<td>Nổi bật</td>
+    <td> <select name="noibat">
+    		<option>Yes</option>
+       		 <option>No</option>
+    </select> </td>
+  </tr>
   </tr>
   <tr>
     <td colspan="2"><div align="center">

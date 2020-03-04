@@ -13,7 +13,7 @@
 	$query=mysqli_query($conn,$sql_all);
 ?>
         	 <div class="tieude">
-            	<h3>Trang chủ</h3>
+            	<h3>Tất cả sản phẩm</h3>
             </div>
         	<div class="sanphamall">
             	<ul>
@@ -23,8 +23,9 @@
 				 ?>
                 	<li><a href="index.php?xem=chitietsp&idloaisp=<?php echo $dong_all['id_loaisp'];?>&id=<?php echo $dong_all['id_sp']; ?>">
                     <img src="admin/modules/quanlychitietsp/uploads/<?php echo $dong_all['hinhanh'] ?>" width="100" height="100">
-                    <p><?php echo $dong_all['tensp']; ?></p>
-                    <p><?php echo $dong_all['gia'].'.000'.'VNĐ'; ?></p>
+                    <p style="color:skyblue"><?php echo $dong_all['tensp']; ?></p>
+                    <p style="color:red;font-weight:bold; border:1px solid #d9d9d9; width:150px;
+                            height:30px; line-height:30px;margin-left:35px;margin-bottom:5px;"> <?php echo number_format($dong_all['gia']).'.000'.'VNĐ'; ?></p>
                 	<p style="color:#F00; text-align:center">Chi tiết sản phẩm</p>
                 </a></li>
                 <?php

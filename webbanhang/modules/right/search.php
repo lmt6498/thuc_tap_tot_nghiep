@@ -6,8 +6,9 @@
 		$query_search=mysqli_query($conn,$sql_search);
 	}
 ?>
-	<p style="text-align:center; color:#F00; background:#0CF; padding:10px;">Sản phẩm tìm thấy</p>
-    
+<div class="tieude">
+ <h3> Sản phẩm tìm thấy </h3>
+    </div>
         	<div class="sanphamall">
             <?php
             	if ($count=mysqli_num_rows($query_search)==0)

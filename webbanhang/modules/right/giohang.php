@@ -36,7 +36,15 @@
 		header ('location:index.php?xem=giohang');
 	}
 	$thanhtien=0;
-	
+	echo '  <table width="100%" border="1" style="border-collapse:collapse; margin:5px; text-align:center;">';
+		echo'  <tr bgcolor="#00FF33";>';
+			echo'<td width="100px">Tên SP</td>';
+			echo'<td width="100px">Hình ảnh</td>';
+			echo'<td width="100px">Giá sp</td>';
+			echo'<td width="30px">SL</td>';
+			echo'<td width="100px">Tổng tiền</td>';
+			echo'<td colspan="3" width="auto">Quản lý</td>';
+			echo'</tr>';
 	foreach ($_SESSION as $name => $value)
 	{
 		if ($value>0)
@@ -54,16 +62,9 @@
 					
 					$tongtien=$dong['gia']*$value;
 					$thanhtien+=$tongtien;
-					echo '  <table width="100%" border="1" style="border-collapse:collapse; margin:5px; text-align:center;">';
+				
 			
-			echo'  <tr bgcolor="#00FF33";>';
-			echo'<td width="100px">Tên SP</td>';
-			echo'<td width="100px">Hình ảnh</td>';
-			echo'<td width="100px">Giá sp</td>';
-			echo'<td width="30px">SL</td>';
-			echo'<td width="100px">Tổng tiền</td>';
-			echo'<td colspan="3" width="auto">Quản lý</td>';
-			echo'</tr>';
+		
 			echo'  <tr bgcolor="#FFFF00">';
 			echo '<td>'; echo $dong['tensp']; echo '</td>';
 			echo '<td>'; echo '<img src="admin/modules/quanlychitietsp/uploads/'.$dong['hinhanh'].'"'.'width="100"'.' height="100"'.'>'; echo '</td>';
@@ -75,11 +76,12 @@
 			echo '<td width="auto">'; echo '<a href="index.php?xem=giohang&xoa='.$id.'">Xóa SP</a>'; echo '</td>';
 			echo'</tr>';
 			
-					echo '</table>';
+					
 				}
 			}
 			}
 	}
+	echo '</table>';
 	if ($thanhtien==0)
 	{
 		echo "Giỏ hàng trống!!";

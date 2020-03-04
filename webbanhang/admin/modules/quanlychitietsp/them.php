@@ -43,6 +43,13 @@
     <td><input type="text" name="thutusp"></td>
   </tr>
   <tr>
+  	<td>Nổi bật</td>
+    <td> <select name="noibat">
+    		<option>Yes</option>
+       		 <option>No</option>
+    </select> </td>
+  </tr>
+  <tr>
     <td colspan="2"><div align="center">
       <button name="them" value="Thêm">Thêm</button>
     </div></td>

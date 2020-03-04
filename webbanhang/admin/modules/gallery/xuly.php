@@ -1,4 +1,5 @@
 <?php
+	include ('../connect.php');
 	if (isset($_POST['upload']))
 	{
 		$id=$_GET['id'];
@@ -12,6 +13,7 @@
 			$ext = end($explode);
 			$path='uploads/';
 			$path= $path . basename($explode[0].time().'.'.$ext);
+			$hinhanhsp=basename($explode[0].time().'.'.$ext);
 			$thongbao = array();
 		
 		if	(empty($tmp))
@@ -37,7 +39,9 @@
 				}
 				if (move_uploaded_file($tmp,$path))
 				{
-					echo 'UPLOAD <strong>'.$name.'<strong> thành công <br>';
+					$sql_upload="insert into gallery (id_sp,hinhanhsp) value('$id','$hinhanhsp')";
+					$query_upload=mysqli_query($conn,$sql_upload);
+					header('location: ../../index.php?quanly=gallery&ac=them&id='.$id);
 				}else
 				{
 					echo 'UPLOAD <strong>'.$name.'<strong>	 thất bại <br>';

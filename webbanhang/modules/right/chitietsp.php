@@ -28,9 +28,38 @@
 </table>
 <br>
 <?php
+	$sql_gallery="select * from gallery where id_sp='$_GET[id]'";
+	$query_gallery=mysqli_query($conn,$sql_gallery);
+?>
+<div class="tieude">
+	<h3>Hình ảnh sản phẩm</h3>
+</div>
+<br>
+        	<div class="hinhanh">
+            <ul>
+                <?php  
+					while ($dong_gallery=mysqli_fetch_array($query_gallery))
+					{
+				 ?>
+               <li>
+               	<img src="admin/modules/gallery/uploads/<?php echo $dong_gallery['hinhanhsp'] ?>" width="100" height="100"> 
+               </li>
+                
+                <?php
+						}
+				?>
+                   </ul>
+            
+            </div>   
+       		<div class="clr"></div>
+            <br>   
+                      
+<?php
 	$sql_spcungloai="select * from chitietsp where id_loaisp='$_GET[idloaisp]' and chitietsp.id_sp <> $_GET[id]";
 	$query_spcungloai=mysqli_query($conn,$sql_spcungloai);
 ?>
+
+
 <div class="tieude">
 	<h3>Sản phẩm cùng loại</h3>
 </div>
@@ -52,4 +81,4 @@
                 </ul> 
             
             </div>
-            
+            <div class="clr"></div>

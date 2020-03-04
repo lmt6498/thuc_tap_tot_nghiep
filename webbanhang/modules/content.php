@@ -18,6 +18,10 @@
 				{
 					include ('modules/right/chitietloaisp.php');
 				}
+				if ($tam=='allsp')
+				{
+					include ('modules/right/allsanpham.php');
+				}
 				elseif ($tam=='chitietsp')
 				{
 					include ('modules/right/chitietsp.php');
@@ -60,7 +64,7 @@
 					include ('modules/right/giohang.php');
 				}
 				else
-					include ('modules/right/allsanpham.php');
+					include ('modules/right/spmoi.php');
 			 ?>
         </div>
 		

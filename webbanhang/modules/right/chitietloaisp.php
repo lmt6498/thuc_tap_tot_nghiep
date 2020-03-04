@@ -17,8 +17,9 @@
 					?>
                 	<li><a href="index.php?xem=chitietsp&idloaisp=<?php echo $dong_chitiet['id_loaisp'];?>&id=<?php echo $dong_chitiet['id_sp']; ?>">
                     <img src="admin/modules/quanlychitietsp/uploads/<?php echo $dong_chitiet['hinhanh'] ?>" width="100" height="100">
-                    <p><?php echo $dong_chitiet['tensp']; ?></p>
-                    <p><?php echo $dong_chitiet['gia'].'.000'.'VNĐ'; ?></p>
+                     <p style="color:skyblue"><?php echo $dong_chitiet['tensp']; ?></p>
+                    <p style="color:red;font-weight:bold; border:1px solid #d9d9d9; width:150px;
+                            height:30px; line-height:30px;margin-left:35px;margin-bottom:5px;"><?php echo number_format($dong_chitiet['gia']).'.000'.'VNĐ'	; ?></p>
                 	<p style="color:#F00; text-align:center">Chi tiết sản phẩm</p>
                 </a></li>
                 <?php
@@ -27,4 +28,4 @@
                 </ul> 
             
             </div>
-           
+           <div class="clr"></div>

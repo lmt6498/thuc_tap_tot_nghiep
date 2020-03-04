@@ -20,6 +20,7 @@
     <td>Giá</td>
     <td>Loại sp</td>
     <td>Thứ tự</td>
+    <td>Nổi bật</td>
     <td colspan="2">Quản lý</td>
   </tr>
   <?php
@@ -34,6 +35,7 @@
     <td><?php echo $dong['gia']; ?></td>
     <td><?php echo $dong['tenloaisp']; ?></td>
     <td><?php echo $dong['thutusp']; ?></td>
+    <td><?php echo $dong['noibat']; ?></td>
     <td><a href="index.php?quanly=quanlychitietsp&ac=sua&id=<?php echo $dong['id_sp']?>">Sửa</a></td>
     <td><a href="modules/quanlychitietsp/xuly.php?id=<?php echo $dong['id_sp']?>">Xóa</a></td>
   </tr>

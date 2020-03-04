@@ -1,7 +1,7 @@
 <div class="menu">
     	<ul>
         	<li><a href="index.php">Trang chủ</a></li>
-            <li><a href="index.php">Sản phẩm</a></li>
+            <li><a href="index.php?xem=allsp">Sản phẩm</a></li>
             <li><a href="index.php?xem=dangky">Đăng ký</a></li>
             <li><a href="index.php?xem=thanhtoan">Đăng nhập</a></li>
             <li><a href="index.php?xem=giohang">Giỏ hàng</a></li>
