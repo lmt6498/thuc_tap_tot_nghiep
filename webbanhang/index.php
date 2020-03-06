@@ -5,6 +5,7 @@
 <title>Website bán quần áo</title>
 </head>
 <link rel="stylesheet" type="text/css" href="styles/dd.css">
+
 <body>
 <div class="wrapper">
 	<?php

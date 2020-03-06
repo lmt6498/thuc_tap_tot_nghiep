@@ -9,7 +9,7 @@
             <li><a href="#">Liên hệ</a></li>
             <form action="index.php" method="post" enctype="multipart/form-data">
             <div class="searchform">
-                <input type="text" id="searchf" name="searchtext" size="25"/> <input type="submit" id="searchbtn" name="search" value="Search" placeholder="Search..."/>
+                <input type="text" id="searchf" name="searchtext" size="25"/> <input type="submit" id="searchbtn" name="search" value="Tìm kiếm" placeholder="Search..."/>
                
             </div>
              </form>
